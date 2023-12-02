@@ -1,0 +1,48 @@
+
+
+
+.Billing__info .form__group input{
+border: 1px solid #013328;
+width: 600px;
+height: 50px;
+border-radius: 10px;
+}
+
+.checkout__cart{
+    padding: 20px;
+    background-color: #013328;
+    color: aliceblue;
+    border-radius: 5px;
+    position: relative;
+    left: 20px;
+}
+
+.checkout__cart h6,h4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.checkout__cart h6{
+    margin-bottom: 20px;
+}
+
+
+.checkout__cart h4{
+    border-top: 0px solid grey;
+    padding-top: 20px;
+}
+
+.check__btn {
+    border: none;
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color:  #013328;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 10px;
+
+}

@@ -1,0 +1,49 @@
+
+.footer {
+  background: #013328;
+}
+
+.Logo img {
+  max-width: 100%;
+}
+
+.footer__text {
+  margin-top: 20px;
+}
+
+.footer__quick-links {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.footer__quick-title {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.footer__quick-links a {
+  text-decoration: none;
+}
+
+
+.footer__quick-links .list-group-item {
+  background: #013328;
+  border: none; 
+  padding: 10px;
+  margin-bottom: 5px; 
+}
+
+.footer__quick-links .list-group-item a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+.footer__quick-links .list-group-item a:hover {
+  text-decoration: underline; 
+}
+
+
+
+

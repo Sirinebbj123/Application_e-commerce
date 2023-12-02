@@ -1,0 +1,67 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --card-bg-01: #fdefe6;
+  --card-bg-02: #d6e5fb;
+  --card-bg-03: #ceebe9;
+  --card-bg-04: #e2f2b2;
+  --primary-color: #0a1d37;
+  --hero-bg: #d6e5fb;
+  --heading-fontSize: 2rem;
+  --small-text-color: #999;
+  --heading-text-color: #0a1d37;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0; /* Réinitialiser la marge pour le corps de la page */
+  padding: 0; /* Réinitialiser le rembourrage pour le corps de la page */
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centrer le contenu de la page */
+  padding: 20px;
+}
+
+p {
+  color: var(--small-text-color);
+  font-size: 1rem;
+}
+
+h1,
+h2 {
+  font-size: var(--heading-fontSize);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 60px 0px;
+}
+
+.section__title{
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+@media only screen and (max-width:768px){
+  .section{
+    padding: 40px 0px;
+  }
+}

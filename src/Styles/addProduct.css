@@ -1,0 +1,78 @@
+/* AddProducts.css */
+
+section {
+    padding: 40px 0;
+  }
+  
+  .form__group {
+    margin-bottom: 20px;
+  }
+  
+  .form__group span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .gap-5 {
+    gap: 5px;
+  }
+  
+  .w-50 {
+    width: 50%;
+  }
+  
+  .w-100 {
+    width: 100%;
+  }
+  
+  .p-2 {
+    padding: 8px;
+  }
+  
+  .buy__btn {
+    background-color:#013328;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Responsive styles for small screens */
+  @media screen and (max-width: 768px) {
+    .d-flex {
+      flex-direction: column;
+    }
+  
+    .w-50 {
+      width: 100%;
+    }
+  }
+  .catego{
+    position: relative;
+    left: 200px;
+    
+  }
+
+  .form__group input {
+    width: 800px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  

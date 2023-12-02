@@ -1,0 +1,390 @@
+const Products = [
+  {
+    id: "01",
+    productName: "BOITE MIEL",
+    imgUrl: "src/assets/images/i22.jpg",
+    category: "cuisine",
+    price: 20,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+  },
+
+
+  {id: "02",
+  productName: "PORTE CLES ",
+  imgUrl: "src/assets/images/i19.jpg",
+  category: "decor",
+  price: 5,
+  shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+  },
+  {
+    id: "03",
+    productName: "PLANCHE PERSILE ",
+    imgUrl: "src/assets/images/i1.jpg",
+    category: "cuisine",
+    price: 25,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+  },
+  {
+    id: "04",
+    productName: "BOL",
+    imgUrl: "src/assets/images/i2.jpg",
+    category: "cuisine",
+    price: 45,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+  },
+  {
+    id: "05",
+    productName: "BOITE A EPICES",
+    imgUrl:"src/assets/images/i3.jpg" ,
+    category: "cuisine",
+    price: 30,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+  
+  },
+  {
+    id: "06",
+    productName: " SEL ET POIVRE",
+    imgUrl:"src/assets/images/i4.jpg" ,
+    category: "cuisine",
+    price: 193,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+   
+  },
+  {
+    id: "07",
+    productName: "BOITE COUVERTS ",
+    imgUrl:"src/assets/images/i5.jpg" ,
+    category: "cuisine",
+    price: 25,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+   
+  },
+  {
+    id: "08",
+    productName: "SOUS TASSE",
+    imgUrl:"src/assets/images/i6.jpg" ,
+    category: "cuisine",
+    price: 29,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+    
+  },
+  {
+    id: "09",
+    productName: "AIDE A MARCHE ",
+    imgUrl:"src/assets/images/i7.jpg" ,
+    category: "jeux",
+    price: 150,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+    
+  },
+  {
+    id: "10",
+    productName: "TRAIN",
+    imgUrl:"src/assets/images/i8.jpg" ,
+    category: "jeux",
+    price: 6,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+    
+  },
+  {
+    id: "11",
+    productName: "LASER ",
+    imgUrl:"src/assets/images/i9.jpg" ,
+    category: "jeux",
+    price: 70,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+    
+  },
+  {
+    id: "12",
+    productName: "VASE",
+    imgUrl:"src/assets/images/i10.jpg" ,
+    category: "decor",
+    price: 90,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+    
+  },
+  {
+    id: "13",
+    productName: "TETE A TETE",
+    imgUrl:"src/assets/images/i11.jpg" ,
+    category: "decor",
+    price: 150,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+    
+  },
+  {
+    id: "14",
+    productName: "TABLE",
+    imgUrl:"src/assets/images/i29.jpg" ,
+    category: "decor",
+    price: 300,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+    
+  },
+  {
+    id: "15",
+    productName: "COUVERTS",
+    imgUrl:"src/assets/images/i13.jpg" ,
+    category: "cuisine",
+    price: 32,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+    
+  },
+  {
+    id: "16",
+    productName: "JEUX DE TABLE",
+    imgUrl:"src/assets/images/i14.jpg" ,
+    category: "jeux",
+    price: 100,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+  },
+  {
+    id: "17",
+    productName: "PORTE CLES ",
+    imgUrl:"src/assets/images/i19.jpg" ,
+    category: "decor",
+    price: 5,
+    shortDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  reviews: [
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      rating: 4.8,
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ],
+  avgRating: 4.7,
+    
+  },
+];
+
+export default Products;

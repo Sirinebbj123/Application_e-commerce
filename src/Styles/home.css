@@ -1,0 +1,144 @@
+.hero__section {
+    background: #2d564e;
+  }
+  
+  .hero__content h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 20px 0px;
+  }
+  
+  .hero__content p {
+    color: #fff;
+    line-height: 28px;
+  }
+  
+  .hero__content p:first-child {
+    font-weight: 500;
+  }
+  
+  .by__btn {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #013328;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 40px;
+  }
+  
+  .by__btn:hover a {
+    color: #fff;
+  }
+  
+  .by__btn a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero__content {
+    padding-top: 45px;
+  }
+  
+  .hero__img img {
+    position: relative;
+    top: 50px; 
+  }
+  
+  .timer__count {
+    background: #013328;
+    height: 300px;
+  }
+  
+  .timer__count img {
+    width: 70% !important;
+    height: 70% !important;
+    object-fit: contain;
+  }
+
+  .store__btn{
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    color:  #013328;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .store__btn a{
+    text-decoration: none;
+   
+  }
+
+  .store__btn a:hover{
+    color: #fff;
+  }
+
+
+  @media only screen and (max-width:992px){
+   .hero__content h2{
+    font-size: 2rem;
+   }
+   .section__title{
+    font-size: 1.7rem;
+   }
+
+   .counter__img{
+    display: none;
+  }
+  .clock__top-content{
+    text-align: center;
+  }
+  .clock__top-content h4{
+   font-size: 0.9rem !important;
+  }
+
+  .clock__top-content h3{
+    font-size: 1rem !important;
+   }
+
+   .count__down-col {
+    text-align: center;
+   }
+
+  }
+
+ 
+
+  
+  @media only screen and (max-width:768px){
+    .hero__content h2{
+     font-size: 1.6rem;
+    }
+
+    .hero__content p{
+      font-size: 0.9rem;
+    }
+    .by__btn a{
+      font-size: 0.9rem;
+    }
+    
+    .section__title{
+      font-size: 1.4rem;
+    }
+
+    
+    
+
+   }
+
+     
+  @media only screen and (max-width:576px){
+    .hero__content{
+      padding-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+  
+ 
+  
