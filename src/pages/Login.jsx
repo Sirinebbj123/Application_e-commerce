@@ -37,14 +37,14 @@ const Login = () => {
     return (
         
             <Helmet title='Login'>
-                <section>
+                <section className="oki">
                     
                 <Container>
                     <Row>
                       {
-                         loading ? (<Col lg='12' className="text-center"><h5 className="fw-bold">Loading.....</h5></Col>):
+                         loading ? (<Col lg='12' className="text-center"><h5 className="fw-bold">Téléchargement.....</h5></Col>):
                        (<Col lg='6' className="m-auto text-center">
-                       <h3 className="fw-bold mb-4">Login</h3>
+                       <h3 className="fw-bold mb-4">Se connecter</h3>
 
                        <Form className="auth__form" onSubmit={SignIn}>
                            <FormGroup className="form__group">
@@ -53,8 +53,8 @@ const Login = () => {
                            <FormGroup className="form__group">
                                <input type="password" placeholder="enter your password" value={password} onChange={e => setPassword(e.target.value)} />
                            </FormGroup>
-                           <button type="submit" className="check__btn auth__btn">Login</button>
-                           <p>Don't have an account? <Link to='/Signup'>Create an account</Link> </p>
+                           <button type="submit" className="check__btn auth__btn">Se Connecter</button>
+                           <p>vous n'avez pas un compte? <Link to='/Signup'>Créer un compte</Link> </p>
                        </Form>
                    </Col>)
                       }

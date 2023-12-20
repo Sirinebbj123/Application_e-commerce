@@ -28,7 +28,7 @@ class Footer extends React.Component {
                         <Col lg='3'>
                             <div className="footer__quick-links">
                                 <h4 className="footer__quick-title">
-                                    Top Categories
+                                    Meilleurs Categories
                                 </h4>
                                 <ListGroup className="mb-3">
                                     <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
@@ -56,26 +56,26 @@ class Footer extends React.Component {
                         <Col lg='2'>
                             <div className="footer__quick-links">
                                 <h4 className="footer__quick-title">
-                                    Usefull links
+                                    Liens 
                                 </h4>
                                 <ListGroup className="mb-3">
                                     <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
-                                        <Link to='/shop'>Shop</Link>
+                                        <Link to='/shop'>Magasine</Link>
                                     </ListGroupItem>
                                 </ListGroup>
                                 <ListGroup>
                                     <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
-                                        <Link to='/cart'>Cart</Link>
+                                        <Link to='/cart'>Panier</Link>
                                     </ListGroupItem>
                                 </ListGroup>
                                 <ListGroup>
                                     <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
-                                        <Link to='/login'>Login</Link>
+                                        <Link to='/login'>Se Connecter</Link>
                                     </ListGroupItem>
                                 </ListGroup>
                                 <ListGroup>
                                     <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
-                                        <Link to='#'>Privacy Policy</Link>
+                                        <Link to='#'>politique de confidentialité</Link>
                                     </ListGroupItem>
                                 </ListGroup>
                             </div>

@@ -9,7 +9,7 @@ const AllProducts = () => {
 
   const deleteProduct = async (id) => {
     await deleteDoc(doc(Db, 'products', id));
-    toast.success("Deleted !!");
+    toast.success("Supprimé!!");
   };
 
   return (
@@ -21,9 +21,9 @@ const AllProducts = () => {
               <thead>
                 <tr>
                   <th>Image</th>
-                  <th>Title</th>
-                  <th>Category</th>
-                  <th>Price</th>
+                  <th>Titre</th>
+                  <th>Categorie</th>
+                  <th>Prix</th>
                   <th>Action</th>
                 </tr>
               </thead>
@@ -31,7 +31,7 @@ const AllProducts = () => {
                 {loading ? (
                   <tr>
                     <td colSpan="5" className='text-center fw-bold py-5'>
-                      Loading......
+                      Téléchargement......
                     </td>
                   </tr>
                 ) : productsData && productsData.length > 0 ? (
@@ -45,7 +45,7 @@ const AllProducts = () => {
                       <td>${item.price}</td>
                       <td>
                         <button onClick={() => deleteProduct(item.id)} className='btn btn-danger'>
-                          Delete
+                          Supprimer
                         </button>
                       </td>
                     </tr>
@@ -53,7 +53,7 @@ const AllProducts = () => {
                 ) : (
                   <tr>
                     <td colSpan="5" className='text-center fw-bold py-5'>
-                      No products found.
+                      Aucun produits trouvé.
                     </td>
                   </tr>
                 )}

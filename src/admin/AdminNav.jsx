@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Container, Row } from 'reactstrap'; // Import Container and Row from reactstrap
+import { Container, Row } from 'reactstrap'; 
 import "../Styles/admin-nav.css";
 import UseAuth from '../Custom-hooks/useAuth';
 
@@ -17,13 +17,10 @@ const AdminNav = () => {
       path: '/dashboard/all-products'
     },
     {
-      display: 'Orders',
-      path: '/dashboard/orders'
+      display: 'add product',
+      path: '/dashboard/add-products'
     },
-    {
-      display: 'Users',
-      path: '/dashboard/users'
-    }
+   
   ];
 
   return (
@@ -33,22 +30,18 @@ const AdminNav = () => {
           <Container>
             <div className="admin__nav-wrapper-top">
               <div className="logo">
-                <h2>Artisanat</h2>
-              </div>
+              <img src="src\assets\images\logo1.png" alt=""  />            
+           </div>
               <div className="search__box">
                 <input type="text" placeholder="search....." />
-                <span>
+                <span className='search' >
                   <i className="ri-search-line"></i>
                 </span>
               </div>
               <div className="admin__nav-top-right">
-                <span>
-                  <i className="ri-notification-2-line"></i>
-                </span>
-                <span>
-                  <i className="ri-settings-5-line"></i>
-                </span>
-                <img src={currentuser && currentuser.photoURL} alt="" />
+             
+                
+                <img src={currentuser && currentuser.photoURL} alt=""  />
               </div>
             </div>
           </Container>

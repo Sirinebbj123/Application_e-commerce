@@ -46,14 +46,15 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="container">
+      <section className='oki'>
+      <div className="container" >
       <div className="row">
         <div className="col-md-6 d-flex flex-column justify-content-center">
-          <h1>Contact Us</h1>
+          <h1>Contacter nous</h1>
           <form className="mt-4" ref={this.form} onSubmit={this.sendEmail}>
             <div className="mb-3">
               <label htmlFor="from_name" className="form-label">
-                Name
+                nom
               </label>
               <input type="text" className="form-control" id="from_name" name="from_name" />
             </div>
@@ -71,7 +72,7 @@ class Contact extends Component {
             </div>
             <div className="mb-3">
               <label htmlFor="location" className="form-label">
-                Your Location
+                Votre adresse
               </label>
               <input
                 type="text"
@@ -83,7 +84,7 @@ class Contact extends Component {
               />
             </div>
             <button type="submit" className="btn btn-primary">
-              Send
+              Envoyer
             </button>
           </form>
         </div>
@@ -101,6 +102,7 @@ class Contact extends Component {
         </div>
       </div>
     </div>
+    </section>
     
     );
   }

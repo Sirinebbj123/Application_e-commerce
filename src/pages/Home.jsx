@@ -78,7 +78,7 @@ const Home = () => {
                 <Container>
                     <Row>
                         <Col lg='12' className="text-center">
-                        <h2 className="section__title">{t("Produits tendance")}</h2>
+                        <h2 className="section__title" >{t("Produits tendance")}</h2>
                         </Col>
                         <Productslist data={trendingProducts} />
                     </Row>
@@ -121,7 +121,7 @@ const Home = () => {
                 <Container>
                     <Row>
                     <Col lg='12' className="text-center">
-                            <h2 className="section__title">New Arrivals</h2>
+                            <h2 className="section__title">Nouvelles Arrivées</h2>
                         </Col>
                         <Productslist data={MobileProducts}/>
                         <Productslist data={WirelessProducts}/>
@@ -132,15 +132,7 @@ const Home = () => {
             </section>
 
             <section className="popular__category">
-            <Container>
-                    <Row>
-                    <Col lg='12' className="text-center">
-                    <h2 className="section__title">{t("Populaire dans la catégorie")}</h2>
-                        </Col>
-                        <Productslist data={WatchesProducts}/>
-
-                    </Row>
-                </Container>
+       
             </section>
 
     </Helmet>

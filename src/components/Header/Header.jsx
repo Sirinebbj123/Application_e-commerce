@@ -36,10 +36,13 @@ const nav__links=[
 ]
 
 const Header = () => {
-  const {t , i18n } = useTranslation();
-  const onChangeLanguage = (e)=>{
-    i18n.changeLanguage(e.target.value)
-  }
+  const { t, i18n } = useTranslation();
+
+  const onChangeLanguage = (selectedLanguage) => {
+    i18n.changeLanguage(selectedLanguage)
+      .then(() => console.log('Language changed successfully'))
+      .catch((err) => console.error('Error in changing language:', err));
+  };
 
 
   const headerRef = useRef(null);
@@ -101,7 +104,7 @@ const Header = () => {
         <Row>
           <div className="nav__wrapper">
             <div className="Logo">
-              <img src="src\assets\images\logo1.png" alt="logo" style ={{ width: '200px', height: 'auto', maxWidth: '60px', maxHeight: '90px',position:'relative', top:'-10px' }}/>
+              <img src="src\assets\images\logo1.png" alt="logo" style ={{ width: '400px', height: 'auto', maxWidth: '60px', maxHeight: '90px',position:'relative', top:'-10px' }}/>
             </div>
             <div className="navigation" ref={menuRef} onClick={menuToggle}>
               <ul className="menu">
@@ -131,22 +134,22 @@ const Header = () => {
                   alt="User"
                   onClick={toggleProfileActions}
                 />
-                <div className="profile__actions" ref={profileActionRef} onClick={toggleProfileActions} >
+                <div className="profile__actions" ref={profileActionRef} onClick={toggleProfileActions} style={{width:"200px"}} >
                   { currentuser ? (
-                    <span onClick={logout}>Logout</span>
+                    <span onClick={logout}>Se déconnecter</span>
                   ) : (
-                    <div className="d-flex align-items-center justify-content-center flex-column" >
-                      <Link to="/Signup">Signup</Link>
-                      <Link to="/Login">Login</Link>
-                      <Link to="/dashboard">Dashboard</Link>
+                    <div className="d-flex align-items-center justify-content-center flex-column"  >
+                      <Link to="/Signup" style={{textDecoration:"none",color:"#4e3105",fontWeight:"bold"}}>S'inscrire</Link>
+                      <Link to="/Login" style={{textDecoration:"none",color:"#4e3105",fontWeight:"bold"}}>Se Connecter</Link>
+                      <Link to="/dashboard" style={{textDecoration:"none",color:"#4e3105",fontWeight:"bold"}}>Tableau de bord</Link>
               
                     </div>
                   )}
                 </div>
               </div>
               <div className="d-flex">
-                            <select className="form-select" aria-label="Default select"  onChange={onChangeLanguage }>
-                              <option value="fr"className="lang">FR</option>
+              <select className="form-select" aria-label="Default select" onChange={(e) => onChangeLanguage(e.target.value)}>                         
+                   <option value="fr"className="lang">FR</option>
                               <option value="en" className="lang">EN</option>
                             </select>
                           </div>

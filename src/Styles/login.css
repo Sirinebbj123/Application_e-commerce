@@ -1,12 +1,16 @@
 .auth__form{
-    background-color: #2d564e;
+    background-color: #4e3105;
     padding: 40px;
     border-radius: 5px;
+}
+.oki{
+    position: relative;
+    top: 40px;
 }
 
 .auth__btn{
 background-color: aliceblue;
-color:#013328 ;
+color:#4e3105;
 font-weight: 600;
 }
 

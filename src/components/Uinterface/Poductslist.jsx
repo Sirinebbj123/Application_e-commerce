@@ -7,7 +7,7 @@ const Productslist = ({ data }) => {
     return (
       <>
         {data.map((item ,index) => (
-            <Productscart key={item.id} item={item} />        ))}
+        <Productscart key={item.id} item={item} />        ))}
       </>
     );
   };

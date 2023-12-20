@@ -13,23 +13,23 @@ const Cart = () => {
   const totalAmount=useSelector((state) => state.cart.totalAmount);
   return (
     <Helmet title="Cart">
-      <CommonSection title="Shopping Cart" />
+      <CommonSection title="Panier" />
 
       <section>
         <Container>
           <Row>
             <Col lg="9">
               {cartItems.length === 0 ? (
-                <h2 className="fs-4 text-center">No item added to the cart</h2>
+                <h2 className="fs-4 text-center">Aucun article ajouté au panier</h2>
               ) : (
                 <table className="table bordered">
                   <thead>
                     <tr>
                       <th>Image</th>
-                      <th>Title</th>
-                      <th>Price</th>
-                      <th>Qty</th>
-                      <th >Delete</th>
+                      <th>Titre</th>
+                      <th>Prix</th>
+                      <th>Qte</th>
+                      <th >DSupprimer</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -45,16 +45,16 @@ const Cart = () => {
             <Col lg="3">
               <div>
                 <h6 className="d-flex align-items-center justify-content-between">
-                  subTotal
+                total
                   <span className="fs-4 fw-bold">{totalAmount}DNT</span>
                 </h6>
                 
               </div>
               <p className="fs-6 mt-2"> 
-              Taxes and shipping will calculate in checkout</p>
+              Les taxes et les frais d'expédition seront calculés lors du paiement</p>
               <div>
-                <button className="by__btn w-70"><Link to='/Shop'>Continue shopping</Link></button>
-                <button className="by__btn w-70 mt-3"><Link to='/Checkout'>Checkout</Link></button>
+                <button className="by__btn w-70"><Link to='/Shop'>Continuer vos achats</Link></button>
+                <button className="by__btn w-70 mt-3"><Link to='/Checkout'>Vérifier</Link></button>
               </div>
             </Col>
 

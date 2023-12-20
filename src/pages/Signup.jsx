@@ -67,11 +67,12 @@ const Signup = () => {
 
     return (
             <Helmet title='Signup'>
-                <Container>
+                <section className="oki">
+                <Container >
                     <Row>
                         {
-                            loading ? <Col lg='12' className="text-center"> <h6 className="fw-bold">loading ....</h6> </Col>:(<Col lg='6' className="m-auto text-center">
-                            <h3 className="fw-bold mb-4">Signup</h3>
+                            loading ? <Col lg='12' className="text-center"> <h6 className="fw-bold">Téléchargement ....</h6> </Col>:(<Col lg='6' className="m-auto text-center">
+                            <h3 className="fw-bold mb-4">S'inscrire</h3>
 
                             <Form className="auth__form" onSubmit={signup}>
                                 <FormGroup className="form__group">
@@ -88,14 +89,15 @@ const Signup = () => {
                                 </FormGroup>
 
                                 <button type="submit" className="check__btn auth__btn" disabled={loading}>Create an account</button>
-                                <p>Already have an account? {" "}
-                                    <Link to='/Login'>Login</Link>
+                                <p>Avez vous déja un compte? {" "}
+                                    <Link to='/Login'>Se connecter</Link>
                                 </p>
                             </Form>
                         </Col>)
                         }
                     </Row>
                 </Container>
+                </section>
             </Helmet>
         
     );

@@ -5,7 +5,7 @@
   width: 100%;
   height: 70px;
   line-height: 70px;
-  background-color: #fff;
+  background-color: #e6e0de;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed; /* Fixer la barre de navigation en haut de la page */
   top: 0;
@@ -37,7 +37,7 @@
 .logo h1 {
   font-size: 1rem;
   font-weight: 500;
-  color: #0a1d37;
+  color:  #8a612ced;
   margin: 0;
 }
 
@@ -48,21 +48,22 @@
   column-gap: 1.5rem;
   margin: 0;
 }
-
+/*#4e3105
 /* Styliser les éléments de navigation */
 .nav__item a {
-  font-weight: 500;
-  color: #0a1d37;
+  font-weight: 700;
+  color: #4e3105;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.8s;
   position: relative;
   bottom: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .nav__item a:hover {
-  color: #5d88c4;
+  color: #8a612ced;
 }
 
 .nav__icons,.fav__icon {
@@ -85,7 +86,7 @@
   transform: translateX(-50%);
   width: 22px;
   height: 22px;
-  background: rgb(229, 0, 0);
+  background: rgb(75, 42, 6);
   color: #fff;
   border-radius: 150px;
   font-size: 0.6rem;

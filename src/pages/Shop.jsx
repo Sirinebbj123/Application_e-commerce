@@ -1,10 +1,10 @@
 import React ,{useState}from "react";
-import CommonSection from "../components/Uinterface/CommonSection"; 
 import Helmet from "../components/Helmet/Helmet";
 import { Container, Col, Row } from "reactstrap";
 import '../Styles/shop.css';
 import Productslist from "../components/Uinterface/Poductslist";
 import Products from "../assets/Data/Products";
+import CommonSection from "../components/Uinterface/commonSection";
 
 const Shop = () => {
 
@@ -53,7 +53,7 @@ const Shop = () => {
             <Col lg='3' md='3'>
               <div className="filter__widget">
               <select onChange={handleFilter}>
-                  <option>Filter By Category</option>
+                  <option>Filtrer par catégorie</option>
                   <option value="tous">tous</option>
                   <option value="cuisine">cuisine</option>
                   <option value="decor">décor</option>
@@ -79,7 +79,7 @@ const Shop = () => {
         <Container>
             <Row>
                 {
-                    ProductsData.length===0 ? <h1 className="text-center fs-4">No Products are found !</h1>:
+                    ProductsData.length===0 ? <h1 className="text-center fs-4">Aucun produit n'a été trouvé !</h1>:
                     (<Productslist data={ProductsData}/>)
                 }
             </Row>

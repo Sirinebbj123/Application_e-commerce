@@ -1,9 +1,9 @@
 .filter__widget select{
 padding: 8px 20px;
-border: 1px solid #013328;
+border: 1px solid #4e3105;
 cursor: pointer;
 border-radius: 5px;
-background: #2d564e;
+background: #4e3105;
 color: aliceblue;
 }
 
@@ -21,7 +21,7 @@ color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid#2d564e ;
+    border: 1px solid#4e3105 ;
     border-radius: 5px;
     padding-right: 12px;
     padding-left: 2px;
@@ -36,5 +36,5 @@ color: aliceblue;
 }
 
 .search__box span{
-    color: #2d564e;
+    color: #4e3105;
 }
